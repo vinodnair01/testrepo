@@ -1,11 +1,17 @@
 machine:
-
-  timezone:
-    America/Los_Angeles # Set the timezone
-
+  python:
+    version: 2.7.9
+  java:
+    version: oraclejdk8
+dependencies:
+  post:
+    - pip install selenium
+    - wget http://selenium-release.storage.googleapis.com/2.44/selenium-server-standalone-2.44.0.jar
+    - java -jar selenium-server-standalone-2.44.0.jar:
+        background: true
 test:
-  override:
-    - echo "done"
+  post:
+    - python testcase.py
 
 deployment:
       dev:
