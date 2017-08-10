@@ -11,4 +11,4 @@ deployment:
       dev:
         branch: dev
         commands:
-          - ssh -v vinod@54.69.5.48 'cd /home/vinod/public_html && git pull origin develop'
+          - ssh -v vinod@54.69.5.48 'cd /home/vinod/public_html && git pull origin dev'
