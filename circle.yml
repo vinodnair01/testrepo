@@ -1,0 +1,14 @@
+machine:
+
+  timezone:
+    America/Los_Angeles # Set the timezone
+
+test:
+  override:
+    - echo "done"
+
+deployment:
+      dev:
+        branch: dev
+        commands:
+          - ssh -v vinod@54.69.5.48 'cd /home/vinod/public_html && git pull origin develop'
