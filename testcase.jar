@@ -8,7 +8,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class ContactForm {
+public class Testttt {
   private WebDriver driver;
   private String baseUrl;
   private boolean acceptNextAlert = true;
@@ -22,14 +22,14 @@ public class ContactForm {
   }
 
   @Test
-  public void testContactForm() throws Exception {
+  public void testTtt() throws Exception {
     driver.get(baseUrl + "/contactform.htm");
     driver.findElement(By.id("Full_Name")).clear();
     driver.findElement(By.id("Full_Name")).sendKeys("Test User");
     driver.findElement(By.id("Email_Address")).clear();
     driver.findElement(By.id("Email_Address")).sendKeys("test@test.com");
     driver.findElement(By.id("Your_Message")).clear();
-    driver.findElement(By.id("Your_Message")).sendKeys("Test message");
+    driver.findElement(By.id("Your_Message")).sendKeys("Test submission");
     driver.findElement(By.id("AntiSpam")).clear();
     driver.findElement(By.id("AntiSpam")).sendKeys("25");
     driver.findElement(By.cssSelector("input[type=\"submit\"]")).click();
