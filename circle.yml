@@ -19,7 +19,7 @@ dependencies:
 
 test:
   override:
-    - java -jre testcase.jar
+    - java testcase.jar
 
 deployment:
       dev:
