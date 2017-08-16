@@ -1,5 +1,6 @@
 from selenium import webdriver
+from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 
-driver = webdriver.Firefox()
-driver.get("https://www.google.com/")
-driver.close()
+binary = FirefoxBinary('/usr/lib/firefox/firefox')
+driver = webdriver.Firefox(firefox_binary=binary)
+driver.get('https://google.com')
