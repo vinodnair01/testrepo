@@ -24,8 +24,8 @@ class ContactForm(unittest.TestCase):
     def test_contact_form(self):
         driver = self.driver
         driver.get(self.base_url + "/contactform.htm")
-        driver.find_element_by_id("Full_Name").clear()
-        driver.find_element_by_id("Full_Name").send_keys("Test User")
+        driver.find_element_by_id("Ful_Name").clear()
+        driver.find_element_by_id("Ful_Name").send_keys("Test User")
         driver.find_element_by_id("Email_Address").clear()
         driver.find_element_by_id("Email_Address").send_keys("test@test.com")
         driver.find_element_by_id("Your_Message").clear()
