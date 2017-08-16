@@ -19,7 +19,7 @@ dependencies:
 
 test:
   override:
-    - python sel.py
+    - python testcase.py
 
 deployment:
       dev:
