@@ -19,7 +19,7 @@ dependencies:
 
 test:
   override:
-    - java testcase.jar
+    - python testcase.py
 
 deployment:
       dev:
