@@ -17,7 +17,7 @@ class ContactForm(unittest.TestCase):
 	binary = FirefoxBinary('/usr/lib/firefox/firefox')
 	self.driver = webdriver.Firefox(firefox_binary=binary)
 	self.driver.implicitly_wait(30)
-        self.base_url = "http://54.69.5.48/contactform.htm"
+        self.base_url = "http://54.69.5.48"
         self.verificationErrors = []
         self.accept_next_alert = True
     
