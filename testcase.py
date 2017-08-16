@@ -15,7 +15,7 @@ class ContactForm(unittest.TestCase):
         from selenium import webdriver
 	from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 	binary = FirefoxBinary('/usr/lib/firefox/firefox')
-	driver = webdriver.Firefox(firefox_binary=binary)
+	self.driver = webdriver.Firefox(firefox_binary=binary)
 	self.driver.implicitly_wait(30)
         self.base_url = "http://54.69.5.48/contactform.htm"
         self.verificationErrors = []
